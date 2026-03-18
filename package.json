@@ -32,7 +32,8 @@
 		"build-all": "npm run build-lsp && npm run build-monaco-editor && npm run package-for-smoketest",
 		"build": "npm run build-lsp && npm run build-monaco-editor",
 		"build-monaco-editor": "ts-node ./build/build-monaco-editor",
-		"build-lsp": "cd monaco-lsp-client && npm install && npm run build"
+		"build-lsp": "cd monaco-lsp-client && npm install && npm run build",
+		"prepublishOnly": "npm run import-typescript && npm run build"
 	},
 	"typings": "./esm/vs/editor/editor.main.d.ts",
 	"main": "./min/vs/editor/editor.main.js",
@@ -47,7 +48,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/aleksanderkatan/monaco-custom-ts"
+		"url": "https://github.com/software-mansion-labs/tsover-monaco-editor"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.56.1",
