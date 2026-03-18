@@ -6177,6 +6177,9 @@ declare namespace ts {
         emittedFiles?: string[];
     }
     interface TypeChecker {
+        __tsover__isInUseTsoverScope(node: Node): boolean;
+        __tsover__isInUseGpuScope(node: Node): boolean;
+        __tsover__couldHaveOverloadedOperators(left: Expression, operator: BinaryOperator, right: Expression, leftType: Type, rightType: Type): boolean;
         getTypeOfSymbolAtLocation(symbol: Symbol, node: Node): Type;
         getTypeOfSymbol(symbol: Symbol): Type;
         getDeclaredTypeOfSymbol(symbol: Symbol): Type;

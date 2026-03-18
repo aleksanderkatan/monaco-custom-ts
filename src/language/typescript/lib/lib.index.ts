@@ -105,6 +105,7 @@ libFileSet['lib.esnext.iterator.d.ts'] = true;
 libFileSet['lib.esnext.promise.d.ts'] = true;
 libFileSet['lib.esnext.sharedmemory.d.ts'] = true;
 libFileSet['lib.scripthost.d.ts'] = true;
+libFileSet['lib.tsover.d.ts'] = true;
 libFileSet['lib.webworker.asynciterable.d.ts'] = true;
 libFileSet['lib.webworker.d.ts'] = true;
 libFileSet['lib.webworker.importscripts.d.ts'] = true;
