@@ -5,7 +5,8 @@
 	"private": true,
 	"description": "A browser based code editor",
 	"homepage": "https://github.com/software-mansion-labs/tsover-monaco-editor",
-	"author": "Microsoft Corporation",
+	"author": "Software Mansion",
+	"contributors": ["Microsoft Corporation"],
 	"license": "MIT",
 	"scripts": {
 		"import-typescript": "ts-node ./build/importTypescript",
@@ -46,7 +47,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/microsoft/monaco-editor"
+		"url": "https://github.com/aleksanderkatan/monaco-custom-ts"
 	},
 	"devDependencies": {
 		"@playwright/test": "^1.56.1",
@@ -86,7 +87,7 @@
 		"style-loader": "^3.3.1",
 		"terser": "^5.14.2",
 		"ts-node": "^10.6.0",
-		"typescript": "^5.9.3",
+		"typescript": "npm:tsover@^5.9.11",
 		"vite": "^7.1.11",
 		"vscode-css-languageservice": "6.2.14",
 		"vscode-html-languageservice": "5.2.0",
